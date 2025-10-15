@@ -1,0 +1,625 @@
+TITLE = "Lumberjack Adventure"  # Título do jogo
+WIDTH = 810  # Largura da tela
+HEIGHT = 612  # Altura da tela
+
+# Imagens
+# Herói virado para direita
+hero_idle_frames = [
+    "hero_idle_1",
+    "hero_idle_2",
+    "hero_idle_3",
+    "hero_idle_4"
+]
+hero_run_frames = [
+    "hero_run_1",
+    "hero_run_2",
+    "hero_run_3",
+    "hero_run_4",
+    "hero_run_5",
+    "hero_run_6",
+]
+hero_jump_frames = [
+    "hero_jump_1",
+    "hero_jump_2",
+    "hero_jump_3",
+    "hero_jump_4",
+    "hero_jump_5",
+    "hero_jump_6",
+]
+hero_hurt_frames = [
+    "hero_hurt_1",
+    "hero_hurt_2",
+    "hero_hurt_3"
+]
+hero_death_frames = [
+    "hero_death_1",
+    "hero_death_2",
+    "hero_death_3",
+    "hero_death_4",
+    "hero_death_5",
+    "hero_death_6",
+]
+hero_attack_frames = [
+    "hero_attack_1",
+    "hero_attack_2",
+    "hero_attack_3",
+    "hero_attack_4",
+    "hero_attack_5",
+    "hero_attack_6",
+]
+
+# Herói virado para esquerda
+hero_idle_frames_left = [
+    "hero_idle_1_left",
+    "hero_idle_2_left",
+    "hero_idle_3_left",
+    "hero_idle_4_left",
+]
+hero_run_frames_left = [
+    "hero_run_1_left",
+    "hero_run_2_left",
+    "hero_run_3_left",
+    "hero_run_4_left",
+    "hero_run_5_left",
+    "hero_run_6_left",
+]
+hero_jump_frames_left = [
+    "hero_jump_1_left",
+    "hero_jump_2_left",
+    "hero_jump_3_left",
+    "hero_jump_4_left",
+    "hero_jump_5_left",
+    "hero_jump_6_left",
+]
+hero_hurt_frames_left = [
+    "hero_hurt_1_left",
+    "hero_hurt_2_left",
+    "hero_hurt_3_left"
+]
+hero_death_frames_left = [
+    "hero_death_1_left",
+    "hero_death_2_left",
+    "hero_death_3_left",
+    "hero_death_4_left",
+    "hero_death_5_left",
+    "hero_death_6_left",
+]
+hero_attack_frames_left = [
+    "hero_attack_1_left",
+    "hero_attack_2_left",
+    "hero_attack_3_left",
+    "hero_attack_4_left",
+    "hero_attack_5_left",
+    "hero_attack_6_left",
+]
+
+# Inimigo 1 direita
+enemy1_run_frames = [
+    "enemy1_run_1",
+    "enemy1_run_2",
+    "enemy1_run_3",
+    "enemy1_run_4",
+    "enemy1_run_5",
+    "enemy1_run_6",
+]
+enemy1_jump_frames = [
+    "enemy1_jump_1",
+    "enemy1_jump_2",
+    "enemy1_jump_3",
+    "enemy1_jump_4",
+    "enemy1_jump_5",
+    "enemy1_jump_6",
+]
+enemy1_hurt_frames = [
+    "enemy1_hurt_1",
+    "enemy1_hurt_2",
+    "enemy1_hurt_3"
+]
+enemy1_death_frames = [
+    "enemy1_death_1",
+    "enemy1_death_2",
+    "enemy1_death_3",
+    "enemy1_death_4",
+    "enemy1_death_5",
+    "enemy1_death_6",
+]
+enemy1_attack_frames = [
+    "enemy1_attack_1",
+    "enemy1_attack_2",
+    "enemy1_attack_3",
+    "enemy1_attack_4",
+    "enemy1_attack_5",
+    "enemy1_attack_6",
+]
+enemy1_idle_frames = [
+    "enemy1_idle_1",
+    "enemy1_idle_2",
+    "enemy1_idle_3",
+    "enemy1_idle_4",
+]
+enemy1_idle_frame = ["enemy1"]
+
+# Inimigo 1 esquerda
+enemy1_run_frames_left = [
+    "enemy1_run_1_left",
+    "enemy1_run_2_left",
+    "enemy1_run_3_left",
+    "enemy1_run_4_left",
+    "enemy1_run_5_left",
+    "enemy1_run_6_left",
+]
+enemy1_jump_frames_left = [
+    "enemy1_jump_1_left",
+    "enemy1_jump_2_left",
+    "enemy1_jump_3_left",
+    "enemy1_jump_4_left",
+    "enemy1_jump_5_left",
+    "enemy1_jump_6_left",
+]
+enemy1_hurt_frames_left = [
+    "enemy1_hurt_1_left",
+    "enemy1_hurt_2_left",
+    "enemy1_hurt_3_left",
+]
+enemy1_death_frames_left = [
+    "enemy1_death_1_left",
+    "enemy1_death_2_left",
+    "enemy1_death_3_left",
+    "enemy1_death_4_left",
+    "enemy1_death_5_left",
+    "enemy1_death_6_left",
+]
+enemy1_attack_frames_left = [
+    "enemy1_attack_1_left",
+    "enemy1_attack_2_left",
+    "enemy1_attack_3_left",
+    "enemy1_attack_4_left",
+    "enemy1_attack_5_left",
+    "enemy1_attack_6_left",
+]
+enemy1_idle_frames_left = [
+    "enemy1_idle_1_left",
+    "enemy1_idle_2_left",
+    "enemy1_idle_3_left",
+    "enemy1_idle_4_left",
+]
+enemy1_idle_frame_left = ["enemy1_left"]
+
+# Inimigo 2 direita
+enemy2_run_frames = [
+    "enemy2_run_1",
+    "enemy2_run_2",
+    "enemy2_run_3",
+    "enemy2_run_4",
+    "enemy2_run_5",
+    "enemy2_run_6",
+]
+enemy2_jump_frames = [
+    "enemy2_jump_1",
+    "enemy2_jump_2",
+    "enemy2_jump_3",
+    "enemy2_jump_4",
+    "enemy2_jump_5",
+    "enemy2_jump_6",
+]
+enemy2_hurt_frames = [
+    "enemy2_hurt_1",
+    "enemy2_hurt_2",
+    "enemy2_hurt_3"
+]
+enemy2_death_frames = [
+    "enemy2_death_1",
+    "enemy2_death_2",
+    "enemy2_death_3",
+    "enemy2_death_4",
+    "enemy2_death_5",
+    "enemy2_death_6",
+]
+enemy2_attack_frames = [
+    "enemy2_attack_1",
+    "enemy2_attack_2",
+    "enemy2_attack_3",
+    "enemy2_attack_4",
+    "enemy2_attack_5",
+    "enemy2_attack_6",
+]
+enemy2_idle_frames = [
+    "enemy2_idle_1",
+    "enemy2_idle_2",
+    "enemy2_idle_3",
+    "enemy2_idle_4",
+]
+enemy2_idle_frame = ["enemy2"]
+
+# Inimigo 2 esquerda
+enemy2_run_frames_left = [
+    "enemy2_run_1_left",
+    "enemy2_run_2_left",
+    "enemy2_run_3_left",
+    "enemy2_run_4_left",
+    "enemy2_run_5_left",
+    "enemy2_run_6_left",
+]
+enemy2_jump_frames_left = [
+    "enemy2_jump_1_left",
+    "enemy2_jump_2_left",
+    "enemy2_jump_3_left",
+    "enemy2_jump_4_left",
+    "enemy2_jump_5_left",
+    "enemy2_jump_6_left",
+]
+enemy2_hurt_frames_left = [
+    "enemy2_hurt_1_left",
+    "enemy2_hurt_2_left",
+    "enemy2_hurt_3_left",
+]
+enemy2_death_frames_left = [
+    "enemy2_death_1_left",
+    "enemy2_death_2_left",
+    "enemy2_death_3_left",
+    "enemy2_death_4_left",
+    "enemy2_death_5_left",
+    "enemy2_death_6_left",
+]
+enemy2_attack_frames_left = [
+    "enemy2_attack_1_left",
+    "enemy2_attack_2_left",
+    "enemy2_attack_3_left",
+    "enemy2_attack_4_left",
+    "enemy2_attack_5_left",
+    "enemy2_attack_6_left",
+]
+enemy2_idle_frames_left = [
+    "enemy2_idle_1_left",
+    "enemy2_idle_2_left",
+    "enemy2_idle_3_left",
+    "enemy2_idle_4_left",
+]
+enemy2_idle_frame_left = ["enemy2_left"]
+
+background = Actor("bg")
+music.play('bgmusic')
+
+# Herói
+hero = Actor("hero_idle_1", (100, 400))
+hero.dead = False
+hero.image = hero_idle_frames[0]
+hero.state = "idle"  # Estados de acordo com as imagens a serem animadas
+hero.animation_frame = 0
+hero.animation_timer = 0
+hero.direction = 1
+hero.can_attack = True  # Variável para controlar cooldown do ataque
+
+hero.velocity_y = 0  # Velocidade vertical
+hero.gravity = 0.5  # Força da gravidade
+hero.jump_power = -12  # Força inicial do pulo (negativo = para cima)
+hero.on_ground = False  # Se está no chão
+hero.jump_timer = 0  # Timer para controle do pulo
+
+# Enemy1
+enemy1 = Actor("enemy1_idle_1_left", (800, 450))
+enemy1.dead = False
+enemy1.image = enemy1_idle_frames_left[0]
+enemy1.state = "idle"  # Estados de acordo com as imagens a serem animadas
+enemy1.animation_frame = 0
+enemy1.animation_timer = 0
+enemy1.direction = 1
+enemy1.can_attack = True  # Variável para controlar cooldown do ataque
+
+enemy1.velocity_y = 0  # Velocidade vertical
+enemy1.gravity = 0.5  # Força da gravidade
+enemy1.jump_power = -12  # Força inicial do pulo (negativo = para cima)
+enemy1.on_ground = False  # Se está no chão
+enemy1.jump_timer = 0  # Timer para controle do pulo
+
+# Enemy2
+enemy2 = Actor("enemy2_idle_1_left", (800, 450))
+enemy2.dead = False
+enemy2.image = enemy2_idle_frames_left[0]
+enemy2.state = "idle"  # Estados de acordo com as imagens a serem animadas
+enemy2.animation_frame = 0
+enemy2.animation_timer = 0
+enemy2.direction = 1
+enemy2.can_attack = True  # Variável para controlar cooldown do ataque
+
+enemy2.velocity_y = 0  # Velocidade vertical
+enemy2.gravity = 0.5  # Força da gravidade
+enemy2.jump_power = -12  # Força inicial do pulo (negativo = para cima)
+enemy2.on_ground = False  # Se está no chão
+enemy2.jump_timer = 0  # Timer para controle do pulo
+
+def draw():
+    screen.clear()
+    background.pos = (WIDTH // 2, HEIGHT // 2)
+    background.draw()
+
+    hero.draw()
+    enemy1.draw()
+    enemy2.draw()
+
+def update_animation(dt):
+    hero.animation_timer += dt
+
+    # Hero
+    if hero.state == "idle":
+        if hero.animation_timer >= 0.2 and hero.direction == 1:  # Direita
+            hero.animation_timer = 0
+            hero.animation_frame = (hero.animation_frame + 1) % len(hero_idle_frames)
+            hero.image = hero_idle_frames[hero.animation_frame]
+        if hero.animation_timer >= 0.2 and hero.direction == -1:  # Esquerda
+            hero.animation_timer = 0
+            hero.animation_frame = (hero.animation_frame + 1) % len(
+                hero_idle_frames_left
+            )
+            hero.image = hero_idle_frames_left[hero.animation_frame]
+
+    elif hero.state == "running":
+        if hero.animation_timer >= 0.1 and hero.direction == 1:  # Direita
+            hero.animation_timer = 0
+            hero.animation_frame = (hero.animation_frame + 1) % len(hero_run_frames)
+            hero.image = hero_run_frames[hero.animation_frame]
+        if hero.animation_timer >= 0.1 and hero.direction == -1:  # Esquerda
+            hero.animation_timer = 0
+            hero.animation_frame = (hero.animation_frame + 1) % len(
+                hero_run_frames_left
+            )
+            hero.image = hero_run_frames_left[hero.animation_frame]
+
+    elif hero.state == "jumping":
+        if hero.animation_timer >= 0.15 and hero.direction == 1:  # Direita
+            hero.animation_timer = 0
+
+            if hero.animation_frame < len(hero_jump_frames) - 1:
+                hero.animation_frame += 1
+
+            hero.image = hero_jump_frames[hero.animation_frame]
+        if hero.animation_timer >= 0.15 and hero.direction == -1:  # Esquerda
+            hero.animation_timer = 0
+
+            if hero.animation_frame < len(hero_jump_frames_left) - 1:
+                hero.animation_frame += 1
+            hero.image = hero_jump_frames_left[hero.animation_frame]
+
+    elif hero.state == "attacking":
+        if hero.animation_timer >= 0.1 and hero.direction == 1:  # Direita
+            hero.animation_timer = 0
+
+            if hero.animation_frame < len(hero_attack_frames) - 1:
+                hero.animation_frame += 1
+                hero.image = hero_attack_frames[hero.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                hero.state = "idle"
+                hero.animation_frame = 0
+                hero.can_attack = True  # Permite atacar novamente
+        if hero.animation_timer >= 0.1 and hero.direction == -1:  # Esquerda
+            hero.animation_timer = 0
+
+            if hero.animation_frame < len(hero_attack_frames_left) - 1:
+                hero.animation_frame += 1
+                hero.image = hero_attack_frames_left[hero.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                hero.state = "idle"
+                hero.animation_frame = 0
+                hero.can_attack = True  # Permite atacar novamente
+
+    # Enemy1
+    if enemy1.state == "idle":
+        if enemy1.animation_timer >= 0.2 and enemy1.direction == 1:  # Direita
+            enemy1.animation_timer = 0
+            enemy1.animation_frame = (enemy1.animation_frame + 1) % len(enemy1_idle_frames)
+            enemy1.image = enemy1_idle_frames[enemy1.animation_frame]
+        if enemy1.animation_timer >= 0.2 and enemy1.direction == -1:  # Esquerda
+            enemy1.animation_timer = 0
+            enemy1.animation_frame = (enemy1.animation_frame + 1) % len(
+                enemy1_idle_frames_left
+            )
+            enemy1.image = enemy1_idle_frames_left[enemy1.animation_frame]
+
+    elif enemy1.state == "running":
+        if enemy1.animation_timer >= 0.1 and enemy1.direction == 1:  # Direita
+            enemy1.animation_timer = 0
+            enemy1.animation_frame = (enemy1.animation_frame + 1) % len(enemy1_run_frames)
+            enemy1.image = enemy1_run_frames[enemy1.animation_frame]
+        if enemy1.animation_timer >= 0.1 and enemy1.direction == -1:  # Esquerda
+            enemy1.animation_timer = 0
+            enemy1.animation_frame = (enemy1.animation_frame + 1) % len(
+                enemy1_run_frames_left
+            )
+            enemy1.image = enemy1_run_frames_left[enemy1.animation_frame]
+
+    elif enemy1.state == "jumping":
+        if enemy1.animation_timer >= 0.15 and enemy1.direction == 1:  # Direita
+            enemy1.animation_timer = 0
+
+            if enemy1.animation_frame < len(enemy1_jump_frames) - 1:
+                enemy1.animation_frame += 1
+
+            enemy1.image = enemy1_jump_frames[enemy1.animation_frame]
+        if enemy1.animation_timer >= 0.15 and enemy1.direction == -1:  # Esquerda
+            enemy1.animation_timer = 0
+
+            if enemy1.animation_frame < len(enemy1_jump_frames_left) - 1:
+                enemy1.animation_frame += 1
+            enemy1.image = enemy1_jump_frames_left[enemy1.animation_frame]
+
+    elif enemy1.state == "attacking":
+        if enemy1.animation_timer >= 0.1 and enemy1.direction == 1:  # Direita
+            enemy1.animation_timer = 0
+
+            if enemy1.animation_frame < len(enemy1_attack_frames) - 1:
+                enemy1.animation_frame += 1
+                enemy1.image = enemy1_attack_frames[enemy1.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                enemy1.state = "idle"
+                enemy1.animation_frame = 0
+                enemy1.can_attack = True  # Permite atacar novamente
+        if enemy1.animation_timer >= 0.1 and enemy1.direction == -1:  # Esquerda
+            enemy1.animation_timer = 0
+
+            if enemy1.animation_frame < len(enemy1_attack_frames_left) - 1:
+                enemy1.animation_frame += 1
+                enemy1.image = enemy1_attack_frames_left[enemy1.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                enemy1.state = "idle"
+                enemy1.animation_frame = 0
+                enemy1.can_attack = True  # Permite atacar novamente
+
+    # Enemy2
+    if enemy2.state == "idle":
+        if enemy2.animation_timer >= 0.2 and enemy2.direction == 1:  # Direita
+            enemy2.animation_timer = 0
+            enemy2.animation_frame = (enemy2.animation_frame + 1) % len(enemy2_idle_frames)
+            enemy2.image = enemy2_idle_frames[enemy2.animation_frame]
+        if enemy2.animation_timer >= 0.2 and enemy2.direction == -1:  # Esquerda
+            enemy2.animation_timer = 0
+            enemy2.animation_frame = (enemy2.animation_frame + 1) % len(
+                enemy2_idle_frames_left
+            )
+            enemy2.image = enemy2_idle_frames_left[enemy2.animation_frame]
+
+    elif enemy2.state == "running":
+        if enemy2.animation_timer >= 0.1 and enemy2.direction == 1:  # Direita
+            enemy2.animation_timer = 0
+            enemy2.animation_frame = (enemy2.animation_frame + 1) % len(enemy2_run_frames)
+            enemy2.image = enemy2_run_frames[enemy2.animation_frame]
+        if enemy2.animation_timer >= 0.1 and enemy2.direction == -1:  # Esquerda
+            enemy2.animation_timer = 0
+            enemy2.animation_frame = (enemy2.animation_frame + 1) % len(
+                enemy2_run_frames_left
+            )
+            enemy2.image = enemy2_run_frames_left[enemy2.animation_frame]
+
+    elif enemy2.state == "jumping":
+        if enemy2.animation_timer >= 0.15 and enemy2.direction == 1:  # Direita
+            enemy2.animation_timer = 0
+
+            if enemy2.animation_frame < len(enemy2_jump_frames) - 1:
+                enemy2.animation_frame += 1
+
+            enemy2.image = enemy2_jump_frames[enemy2.animation_frame]
+        if enemy2.animation_timer >= 0.15 and enemy2.direction == -1:  # Esquerda
+            enemy2.animation_timer = 0
+
+            if enemy2.animation_frame < len(enemy2_jump_frames_left) - 1:
+                enemy2.animation_frame += 1
+            enemy2.image = enemy2_jump_frames_left[enemy2.animation_frame]
+
+    elif enemy2.state == "attacking":
+        if enemy2.animation_timer >= 0.1 and enemy2.direction == 1:  # Direita
+            enemy2.animation_timer = 0
+
+            if enemy2.animation_frame < len(enemy2_attack_frames) - 1:
+                enemy2.animation_frame += 1
+                enemy2.image = enemy2_attack_frames[enemy2.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                enemy2.state = "idle"
+                enemy2.animation_frame = 0
+                enemy2.can_attack = True  # Permite atacar novamente
+        if enemy2.animation_timer >= 0.1 and enemy2.direction == -1:  # Esquerda
+            enemy2.animation_timer = 0
+
+            if enemy2.animation_frame < len(enemy2_attack_frames_left) - 1:
+                enemy2.animation_frame += 1
+                enemy2.image = enemy2_attack_frames_left[enemy2.animation_frame]
+            else:
+                # Quando termina a animação de ataque
+                enemy2.state = "idle"
+                enemy2.animation_frame = 0
+                enemy2.can_attack = True  # Permite atacar novamente
+
+def update(dt):
+    update_animation(dt)
+
+    # Sistema de física para pulo
+    update_physics(dt)
+
+    # Só permite mudar de estado se não estiver atacando
+    if hero.state != "attacking" and hero.state != "jumping":
+        hero.state = "idle"
+
+    moving = False
+
+    if keyboard.left:
+        hero.x -= 5
+        hero.direction = -1
+        moving = True
+
+    if keyboard.right:
+        hero.x += 5
+        hero.direction = 1
+        moving = True
+
+    # Pular
+    if keyboard.up and hero.on_ground:
+        hero.velocity_y = hero.jump_power
+        hero.on_ground = False
+        hero.state = "jumping"
+        hero.animation_frame = 0  # Resetar animação de pulo
+
+    if moving and hero.state != "attacking" and hero.state != "jumping":
+        hero.state = "running"
+
+    # Limitando o herói ao tamanho da tela horizontalmente
+    hero.x = max(0, min(WIDTH, hero.x))
+
+    if hero.colliderect(enemy1) or hero.colliderect(enemy2):
+        set_hero_hurt()
+
+
+def update_physics(dt):
+    """Atualiza a física do herói (gravidade e pulo)"""
+    # Aplicar gravidade
+    hero.velocity_y += hero.gravity
+    hero.y += hero.velocity_y
+
+    # Verificar se atingiu o "chão" (parte inferior da tela)
+    if hero.y >= HEIGHT - 200:  # 50px da parte inferior
+        hero.y = HEIGHT - 200
+        hero.velocity_y = 0
+        hero.on_ground = True
+
+        # Se estava pulando e agora tocou o chão, voltar para idle ou running
+        if hero.state == "jumping":
+            hero.state = "idle"
+            hero.animation_frame = 0
+
+    else:
+        hero.on_ground = False
+
+    # Timer para controle de pulo
+    if keyboard.up:
+        hero.jump_timer += dt
+        # Pulo mais alto se segurar a tecla (até um limite)
+        if hero.jump_timer < 0.2 and hero.velocity_y < 0:
+            hero.velocity_y = hero.jump_power * (1 - hero.jump_timer / 0.5)
+    else:
+        hero.jump_timer = 0
+
+
+def on_mouse_down(pos):
+    if hero.state != "attacking" and hero.can_attack:
+        hero.state = "attacking"
+        hero.animation_frame = 0
+        hero.can_attack = False  # Impede novos ataques até terminar a animação
+
+
+def set_hero_hurt():
+    sounds.hero_hurt.play()
+
+    if hero.direction == 1:
+        hero.image = hero_hurt_frames[hero.animation_frame]
+    else:
+        hero.image = hero_hurt_frames_left[hero.animation_frame]
+
+    clock.schedule_unique(set_hero_normal, 0.5)
+
+
+def set_hero_normal():
+    hero.state = "idle"
+    hero.animation_frame = 0
+    hero.animation_timer = 0
